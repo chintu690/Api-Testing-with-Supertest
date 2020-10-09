@@ -28,18 +28,9 @@ Jest configurations:
 4. Install Supertest for endpoint testing 
    npm install supertest --save-dev
    
-5.npm run test command will invoke the test parameter with the following:
 
-NODE_TLS_REJECT_UNAUTHORIZED=0: ignores the SSL certificate
-jest: runs the framework with the configurations defined under Jest block
---reporters: default jest-stare 
---coverage: invokes test coverage
---detectOpenHandles: for debugging
---runInBand: serial execution of Jest tests
---forceExit: to shut down cleanly
---testTimeout = 60000 (custom timeout, default is 5000 milliseconds)
 
-Testing endpoints with SuperTest
+5. Testing endpoints with SuperTest
 
 SuperTest is a node library, superagent driven, to extensively test Restful web services. It hits the HTTP server to send requests (GET, POST, PATCH, PUT, DELETE ) and fetch responses
 
@@ -74,5 +65,14 @@ Install Supertest for endpoint testing
   }
 }
 
-  
+6.npm run test command will invoke the test parameter with the following:
+
+NODE_TLS_REJECT_UNAUTHORIZED=0: ignores the SSL certificate
+jest: runs the framework with the configurations defined under Jest block
+--reporters: default jest-stare 
+--coverage: invokes test coverage
+--detectOpenHandles: for debugging
+--runInBand: serial execution of Jest tests
+--forceExit: to shut down cleanly
+--testTimeout = 60000 (custom timeout, default is 5000 milliseconds)
   
